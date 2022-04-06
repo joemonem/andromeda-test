@@ -26,6 +26,15 @@ pub enum ContractError {
 
     #[error("Not Listed")]
     NotListed {},
+
+    #[error("Unsurpassed Highest Bid")]
+    UnsurpassedHighestBid {},
+
+    #[error("Ongoing Auction")]
+    OngoingAuction {},
+
+    #[error("Unapproved")]
+    Unapproved {},
     // Add any other custom errors you like here.
     // Look at https://docs.rs/thiserror/1.0.21/thiserror/ for details.
 }
